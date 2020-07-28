@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/form.css"/>
+    <title>最終課題</title>
+</head>
+   
+<body>
+    <header>
+        <h1 class="box1">クイズ</h1>
+    </header>
+    
+    <div>
+       
+        <h2 class="box2">第一問</h2>
+        <p>同じ小学校に通う、太郎君と花子さんは、運動会の日も、遠足の日も、音楽会の日も同じお弁当でした。さて、それはどんなお弁当だった？</p>
+        
+        <button type="button" onclick="obento(1)">おにぎり</button>
+        <button type="button" onclick="obento(2)">サンドウィッチ</button>
+        <button type="button" onclick="obento(3)">唐揚げ</button>
+        <button type="button" onclick="obento(4)">ばなな</button>
+        
+        <p><button type="button" onclick="obento(5)">ヒント</button></p>
+        
+        <p>
+            <label for="answer">
+                答え:
+                <input type="text" name="answer">
+            </label>
+            
+        </p>
+    </div>
+    <div >
+        <h2 class="box3">第二問</h2>
+        <p>しゃぶしゃぶ、おすし、焼肉。名探偵が一番好きなのはどれ？</p>
+        
+        <button type="button" onclick="tantei(1)">しゃぶしゃぶ</button>
+        <button type="button" onclick="tantei(2)">おすし</button>
+        <button type="button" onclick="tantei(3)">焼肉</button>
+        
+        <p>
+            <button type="button" onclick="tantei(4)">ヒント</button>
+        </p>
+        
+        <p>
+            <label for="answer">
+                答え:
+                <input type="text" name="answer">
+            </label>
+            
+        </p>
+    </div>
+        
+      
+    <div>
+        <h2 class="box4">第三問</h2>
+        <p>出川哲朗、江頭２：５０、山崎邦正、この中で賢いのは誰？</p>
+        
+        <button type="button" onclick="geinin(1)">出川哲朗</button>
+        <button type="button" onclick="geinin(2)">山崎邦正</button>
+        <button type="button" onclick="geinin(3)">江頭2:50</button>
+        
+        <p>
+        <button type="button" onclick="geinin(4)">ヒント</button></p>    
+        
+         <p>
+            <label for="answer">
+                答え:
+                <input type="text" name="answer">
+            </label>
+            
+        </p>
+        
+    
+    </div>
+    
+    <div>
+       <form action="#" method="get">
+       
+        <p>----クイズ終了！！----</p>
+        <p>↓クイズ結果を送信する↓</p>
+        <input type="submit" name="送信する"/>
+        
+        </form>
+        
+    </div>
+  
+     
+    <script src="js/Quiz.js"></script>  
+      
+</body>
+    
+    
+</html>
